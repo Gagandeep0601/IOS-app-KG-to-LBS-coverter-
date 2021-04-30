@@ -15,6 +15,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func showmessage(_ sender: Any) {
+         let alert = UIAlertController(title:"Welcome", message: "It is your first app", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Done", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert,animated: true,completion: nil)
+    }
+    
 }
 
